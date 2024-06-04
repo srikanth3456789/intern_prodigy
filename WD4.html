@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1a9a907f05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="" class="logo" />
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Computer Science Engineer</p>
+      <h1>Hi, I'm<span> Srikanth D </span> <br />from Sri Sairam Institute of Technology</h1>
+    </div>
+  </div>
+</div>
+<!--------------about------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <!-- Replace image src with your image -->
+        <img src="your_image.jpg" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+           I am a person with excellent communication an interpersonal skills for creating innovative solutions Able to work effectively and communicate among teamenvironment. Adaptable and
+       easy  to learn. i am waiting for a challenging carre
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>Python</span><br />Programming Language</li>
+            <li><span>Cloud Computing</span><br />AWS, Azure, GCP</li>
+            <li><span>C</span><br />Programming Language</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>July 2023 - August 2023</span><br />Cloud Computing Internship at Trios Technology</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>2021 - Present</span><br />Bachelor of Engineering in Computer Science at Sri Sairam Institute of Technology</li>
+            <li><span>2019 - 2021</span><br />Lakshmi school</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------services------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>
+          I offer professional web design services, specializing in crafting visually stunning and user-centric websites that captivate audiences.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>UI Design</h2>
+        <p>
+          I provide user-centric design solutions, including intuitive user interfaces and responsive design, to enhance experiences and captivate audiences.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>App Design</h2>
+        <p>
+          I specialize in crafting seamless app experiences that captivate users and drive engagement, focusing on intuitive navigation and attention-grabbing visuals.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------Portfolio------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/workk.jpg" />
+        <div class="layer">
+          <h3>Smart Bin Monitoring System</h3>
+          <p>
+            Proposed "Smart Bin Monitoring System," integrating ultrasonic sensors and IoT for real-time waste monitoring in urban areas.
+          </p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!------------------------contact form------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>your_email@example.com</p>
+        <p><i class="fa-solid fa-phone"></i>your_phone_number</p>
+        <div class="social-icons">
+          <!-- Update social media links -->
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Update CV download link -->
+      <a href="#" download class="btn btn2">Download CV</a>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Srikanth D </p>
+  </div>
+</div>
